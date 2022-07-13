@@ -1,25 +1,26 @@
-def voyToLetter(src):
+def voytoletter(src):
     ret = [src]
     for letter in changes:
         buf = ''
-        checkDouble = 1
+        checkdouble = 1
         for c in src:
-            if (c in voy):
+            if c in voy:
                 c = letter
             buf += c
         for r in ret:
             if r == buf:
-                checkDouble = 0
-        if checkDouble:
+                checkdouble = 0
+        if checkdouble:
             ret.append(buf)
-    return (ret)
+    return ret
+
 
 word = 'tartuf'
 changes = ['i', 'a', 'u', 'y']
 voy = ['i', 'a', 'u', 'y', 'e', 'o']
 rez = []
 
-rez += voyToLetter(word)
+rez += voytoletter(word)
 for result in rez:
     print(result)
 
