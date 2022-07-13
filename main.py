@@ -14,7 +14,7 @@ def voyToLetter(src):
             ret.append(buf)
     return (ret)
 
-word = 'bobi'
+word = 'tartuf'
 changes = ['i', 'a', 'u', 'y']
 voy = ['i', 'a', 'u', 'y', 'e', 'o']
 rez = []
